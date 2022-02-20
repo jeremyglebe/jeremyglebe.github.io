@@ -1,6 +1,4 @@
-# Game Programming
-
-## Games Published
+## Game Programming
 
 | Title | Webpage | Source |
 |-------|---------|--------|
