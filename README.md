@@ -1,6 +1,6 @@
 ![Oh wow, it's me!](me.png)
 
-## Project Reference
+# Project Reference
 
 | Categories | Link |
 |------------|------|
