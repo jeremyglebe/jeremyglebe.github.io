@@ -1,3 +1,4 @@
+![Oh wow, it's me!](me.png)
 
 ## Projects
 
