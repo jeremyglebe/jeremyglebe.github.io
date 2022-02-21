@@ -5,3 +5,4 @@
 | Categories | Link |
 |------------|------|
 | [Game Programming](/Games/) | [/Games/](/Games/) |
+| [Algorithms](/Algorithms/) | [/Algorithms/](/Algorithms/) |
