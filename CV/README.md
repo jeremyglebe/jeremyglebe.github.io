@@ -75,7 +75,56 @@ Below are skills with which I have some experience.
 
 ## Work Experience
 ### Summary
+I have been working in education in some form (tutoring, assistantships, teaching) for 4 years. I worked at Midwestern State University in various roles (including teaching) and I currently work at a private K-12 school called Dexter. I have also been self-employed a private app contractor for 4 years.
+
+### Software
 
 ### Teaching
 
-### Software
+**Dexter K-12 School, Wichita Falls, TX**<br>
+*Email:* becca@dexterlearning.com; *Phone:* 940-613-0123<br>
+**Educator** October 2021 to Present
+- Instruction of students from 5th-12th grade in Computer Science topics
+- Design and implementation of CS curriculum for all grade levels
+- Teaching the following courses: AP Computer Science, Advanced Computer Science Foundations, Mobile Game Design, Robotics, 3D Printing
+- Tutoring students in the following courses: Computer Science Foundations, Scratch Programming
+
+**University of North Texas**<br>
+**Computer Science and Engineering Department, Denton, TX**<br>
+*Email*: cse@unt.edu; *Phone*: 940-565-2767<br>
+**Instructional Assistant** September 2020 to Present
+- Assisting instructors as needed in the operation or management of their course.
+- Grading of assignments for courses including Systems Programming, Computer
+Science II, and graduate Programming Languages
+- Tutoring students in the courses I graded for
+
+**Midwestern State University**<br>
+**Computer Science Department, Wichita Falls, TX**<br>
+*Email*: catherine.stringfellow@msutexas.edu, *Phone*: (940) 397-4702<br>
+**Adjunct Professor** Jan 2021 to July 2021
+- Designed course material for courses and instructed classes of students ranging from
+freshmen to seniors.
+- Created all course material for an entirely new senior level course (CMPS 4443 Mobile
+Game Production)
+- Assisted in running university events such as the MSUTexas Game Jam
+
+**Graduate Assistant** Jan 2020 to May 2020
+- Assist with departmental research projects.
+- General tutoring for computer science undergraduates.
+- Prepare, instruct, and grade labs for Computer Science I undergraduate courses.
+
+**Supplemental Instructor** Jan 2019 to Dec 2019
+- Assist professor in instructing students in 1063 Data Structures & Abstract Data Types.
+- Tutor students outside of class.
+- Prepare and run separate study sessions to cover material students may struggle with.
+
+**Lab Tutor** Aug 2018 to Dec 2018
+- Helped explain concepts and assignments to computer science students.
+
+**Midwestern State University**<br>
+**Physics Department, Wichita Falls, TX**<br>
+*Email*: physics.program@msutexas.edu, *Phone*: (940) 397-4184
+**Lab Instructor** June 2018 to August 2019
+- Prepare and teach lab instruction and experimentation for Physics I & II.
+- Assist students who are struggling with Physics concepts.
+- Grading all assignments for the lab section.
