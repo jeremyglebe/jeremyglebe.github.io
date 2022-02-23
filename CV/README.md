@@ -51,9 +51,11 @@ numerous public projects, as well as study and experience in programming paradig
 
 #### Development Tools
 - **Languages:** Javascript, Typescript, Python, C++, Bash, HTML, CSS
-- **Web libraries & frameworks:** NodeJS, Angular, Ionic
-- **Data frameworks:** Firebase
-- **Development Environments:** Git, GitHub, VSCode
+- **Frameworks:** Angular
+- **Databases & Servers:** Firebase, NodeJS, Express
+- **Editors & IDEs:** Visual Studio Code
+- **App & Game Engines:** Ionic, Phaser
+- **Version Control:** Git, GitHub
 
 ### Basic Skills
 Below are skills with which I have some experience.
@@ -65,9 +67,11 @@ Below are skills with which I have some experience.
 
 #### Development Tools
 - **Languages:** C, PHP, Java, C#, Go, Perl, Assembly, Dart, Lua, Julia, Haskell, Prolog, Swift
-- **Web libraries & frameworks:** React, Vue
-- **Data frameworks:** SQL (MySQL), MongoDB
-- **Development Environments:** Visual Studio, Netbeans, PyCharm, SVN, TortoiseSVN, Android Studio, XCode, Unreal Engine
+- **Frameworks:** React, Vue
+- **Databases & Servers:** SQL (MySQL), MongoDB
+- **Editors & IDEs:** Visual Studio, Netbeans, PyCharm, Android Studio, XCode 
+- **App & Game Engines:** Unreal Engine
+- **Version Control:** SVN, TortoiseSVN
 
 ## Work Experience
 ### Summary
