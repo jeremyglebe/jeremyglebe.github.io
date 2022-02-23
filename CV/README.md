@@ -40,6 +40,34 @@ I hold a Bachelor of Science in Computer Science from Midwestern State Universit
   - MSU chapter president, Spring 2020
 
 ## Skills
+### Advanced Skills
+Below are my best skills - the subjects and tools I am most comfortable with.
+#### Computer Science
+- **Mobile Applications.** Design, implementation, and porting between devices of mobile applications and games. Examples and projects found on my linked GitHub. 4 years of private app contracting experience.
+- **Web Services & Protocols.** Establishing and maintaining server/client connections and transferring data over the web. Providing and utilizing web APIs. (Including RESTful APIs)
+- **Object Oriented Programming.** Extensive use of all OOP concepts, including
+numerous public projects, as well as study and experience in programming paradigms and programming language design.
+- **Concurrent Programming.** Including multi-threading, coroutines, futures/promises, shared memory, and message passing. Very experienced in event-driven programming.
+
+#### Development Tools
+- **Languages:** Javascript, Typescript, Python, C++, Bash, HTML, CSS
+- **Web libraries & frameworks:** NodeJS, Angular, Ionic
+- **Data frameworks:** Firebase
+- **Development Environments:** Git, GitHub, VSCode
+
+### Basic Skills
+Below are skills with which I have some experience.
+#### Computer Science
+- **Software Engineering.** 4 years of professional experience developing production applications. Additionally, general knowledge from 6 years of studying software development.
+- **Systems Automation.** Experience from Big Data and AI classes at UNT.
+- **Functional Programming.** Including untyped programming, lambda calculus, pattern matching, and recursion.
+- **Logical Programming.** Including propositional and predicate logic, higher order predicates, grammars, and parsing.
+
+#### Development Tools
+- **Languages:** C, PHP, Java, C#, Go, Perl, Assembly, Dart, Lua, Julia, Haskell, Prolog, Swift
+- **Web libraries & frameworks:** React, Vue
+- **Data frameworks:** SQL (MySQL), MongoDB
+- **Development Environments:** Visual Studio, Netbeans, PyCharm, SVN, TortoiseSVN, Android Studio, XCode, Unreal Engine
 
 ## Work Experience
 ### Summary
