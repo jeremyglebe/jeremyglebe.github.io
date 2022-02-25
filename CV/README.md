@@ -51,7 +51,7 @@ numerous public projects, as well as study and experience in programming paradig
 
 #### Development Tools
 - **Languages:** Javascript, Typescript, Python, C++, Bash, HTML, CSS
-- **Frameworks:** Angular
+- **Frameworks & Libraries:** Angular
 - **Databases & Servers:** Firebase, NodeJS, Express
 - **Editors & IDEs:** Visual Studio Code
 - **App & Game Engines:** Ionic, Phaser
@@ -67,7 +67,7 @@ Below are skills with which I have some experience.
 
 #### Development Tools
 - **Languages:** C, PHP, Java, C#, Go, Perl, Assembly, Dart, Lua, Julia, Haskell, Prolog, Swift
-- **Frameworks:** React, Vue
+- **Frameworks & Libraries:** React, Vue, P5.js
 - **Databases & Servers:** SQL (MySQL), MongoDB
 - **Editors & IDEs:** Visual Studio, Netbeans, PyCharm, Android Studio, XCode 
 - **App & Game Engines:** Unreal Engine
@@ -78,6 +78,12 @@ Below are skills with which I have some experience.
 I have been working in education in some form (tutoring, assistantships, teaching) for 4 years. I worked at Midwestern State University in various roles (including teaching) and I currently work at a private K-12 school called Dexter. I have also been self-employed a private app contractor for 4 years.
 
 ### Software
+
+**Self-Employed Mobile App Contracts**
+January 2018 to Present
+- Simple church webapp for information and directions to the the church, as well as a dynamic gallery/music page
+- Contractor app for moving company which included gps navigation & tracking
+- Employee management app with job status, reporting, clocking in/out, photo uploads, php/sql backend
 
 ### Teaching
 
