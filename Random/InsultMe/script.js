@@ -51,6 +51,7 @@ function randomInsult(){
 function mousePressed(){
     // Toggle pause state
     paused = !paused;
+    return false;
 }
 
 function calcTextSize(){
