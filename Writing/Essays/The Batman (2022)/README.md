@@ -1,0 +1,6 @@
+# The Batman: Somehow, it's great
+## Jeremy Glebe
+
+## What "The Batman" got right
+### Robert Pattinson's performance as the Batman is nothing short of phenomenal.
+For all the concern about his adopting the persona of the caped crusader - Robert Pattinson was the best Batman put to the big screen so far. His character is intimidating, insightful, and brooding without the cringe and grunting of Christian Bale's performance. There are several moments that stand out but the opening scenes, where Pattinson narrates the effect he has had on the city's criminal element, are easily my favorite. However, if you are expecting the suave, charming philanthropist Bruce Wayne to make an appearance you will be disappointed. This Bruce is a tortured man who recluses inside his mansion, avoiding making appearances so he has more time to be a bat. I thought, for most of the movie, that I would walk away saying "Robert Pattinson plays a good Batman, but his Bruce Wayne needs work." I thought I would say that. My opinion changed near the end - but more on that later.
