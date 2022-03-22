@@ -43,6 +43,7 @@ I hold a Bachelor of Science in Computer Science from Midwestern State Universit
 ### Advanced Skills
 Below are my best skills - the subjects and tools I am most comfortable with.
 #### Computer Science
+- **Software Engineering.** 4 years of professional experience developing production applications. Additionally, general knowledge from 6 years of studying software development.
 - **Mobile Applications.** Design, implementation, and porting between devices of mobile applications and games. Examples and projects found on my linked GitHub. 4 years of private app contracting experience.
 - **Web Services & Protocols.** Establishing and maintaining server/client connections and transferring data over the web. Providing and utilizing web APIs. (Including RESTful APIs)
 - **Object Oriented Programming.** Extensive use of all OOP concepts, including
@@ -57,10 +58,8 @@ numerous public projects, as well as study and experience in programming paradig
 - **App & Game Engines:** Ionic, Phaser
 - **Version Control:** Git, GitHub
 
-### Basic Skills
-Below are skills with which I have some experience.
+### Additional Skills
 #### Computer Science
-- **Software Engineering.** 4 years of professional experience developing production applications. Additionally, general knowledge from 6 years of studying software development.
 - **Systems Automation.** Experience from Big Data and AI classes at UNT.
 - **Functional Programming.** Including untyped programming, lambda calculus, pattern matching, and recursion.
 - **Logical Programming.** Including propositional and predicate logic, higher order predicates, grammars, and parsing.
@@ -75,15 +74,21 @@ Below are skills with which I have some experience.
 
 ## Work Experience
 ### Summary
-I have been working in education in some form (tutoring, assistantships, teaching) for 4 years. I worked at Midwestern State University in various roles (including teaching) and I currently work at a private K-12 school called Dexter. I have also been self-employed a private app contractor for 4 years.
+I have 4 years of work experience developing web and mobile applications. I 4 years of work experience in education, including K-12 and college level courses.
 
 ### Software
 
-**Self-Employed Mobile App Contracts**
+**Silver Bullet Web Solutions, Bowie, TX**<br>
+*Email:* kenny@silverbulletwireless.com; *Phone:* 940-233-8615<br>
+**Programmer - Mobile & PWA** 2021 to Present
+- Implementation of frontend and backend elements for business apps
+- Secondary management of mobile and progressive web app projects
+- Projects built on HTML/Typescript, Angular, Ionic, with PHP backends
+
+**Mobile App Contracts**
 January 2018 to Present
 - Simple church webapp for information and directions to the the church, as well as a dynamic gallery/music page
 - Contractor app for moving company which included gps navigation & tracking
-- Employee management app with job status, reporting, clocking in/out, photo uploads, php/sql backend
 
 ### Teaching
 
