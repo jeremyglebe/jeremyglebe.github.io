@@ -69,7 +69,7 @@ numerous public projects, as well as study and experience in programming paradig
 - **Frameworks & Libraries:** React, Vue, P5.js
 - **Databases & Servers:** SQL (MySQL), MongoDB
 - **Editors & IDEs:** Visual Studio, Netbeans, PyCharm, Android Studio, XCode 
-- **App & Game Engines:** Unreal Engine
+- **App & Game Engines:** Unreal Engine, Unity
 - **Version Control:** SVN, TortoiseSVN
 
 ## Work Experience
