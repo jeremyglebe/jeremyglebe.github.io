@@ -2,7 +2,7 @@
 
 | **Location**            | **Phone**      | **Email**             |
 | ----------------------- | -------------- | --------------------- |
-| Wichita Falls, TX 76308 | (940)-781-6316 | jeremyglebe@gmail.com |
+| Grapevine, TX 76051     | (940)-781-6316 | jeremyglebe@gmail.com |
 
 ### Find me online!
 - [jeremyglebe.com](https://jeremyglebe.com/)
