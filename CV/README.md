@@ -12,7 +12,7 @@
 
 ## Education
 ### Summary
-I hold a Bachelor of Science in Computer Science from Midwestern State University. This year I will be obtaining a M.S. degree in Computer Science from the University of North Texas.
+I hold a Bachelor of Science in Computer Science from Midwestern State University. I am also working on a M.S. degree in Computer Science from the University of North Texas.
 
 ### Details
 **University of North Texas, Denton, TX. September 2020 - Present**
@@ -65,7 +65,7 @@ numerous public projects, as well as study and experience in programming paradig
 - **Logical Programming.** Including propositional and predicate logic, higher order predicates, grammars, and parsing.
 
 #### Development Tools
-- **Languages:** C, PHP, Java, C#, Go, Perl, Assembly, Dart, Lua, Julia, Haskell, Prolog, Swift
+- **Languages:** C, PHP, Java, C#, Go, Perl, Assembly, Dart, Lua, Julia, Haskell, Prolog, Swift, Kotlin
 - **Frameworks & Libraries:** React, Vue, P5.js
 - **Databases & Servers:** SQL (MySQL), MongoDB
 - **Editors & IDEs:** Visual Studio, Netbeans, PyCharm, Android Studio, XCode 
@@ -78,15 +78,20 @@ I have 4 years of work experience developing web and mobile applications. I 4 ye
 
 ### Software
 
+**Christus Health, Irving, TX**<br>
+*Address:* 919 Hidden Ridge, Irving, TX 75038; *Phone:* (469) 282-2000<br>
+**Mobile Developer** May 2022 to Present
+- Implementation of native mobile apps integrated with Electronic Health Record systems
+
 **Silver Bullet Web Solutions, Bowie, TX**<br>
 *Email:* kenny@silverbulletwireless.com; *Phone:* 940-233-8615<br>
-**Programmer - Mobile & PWA** 2021 to Present
+**Programmer - Mobile & PWA** April 2021 to April 2022
 - Implementation of frontend and backend elements for business apps
 - Secondary management of mobile and progressive web app projects
 - Projects built on HTML/Typescript, Angular, Ionic, with PHP backends
 
 **Mobile App Contracts**
-January 2018 to Present
+Since January 2018 (Ongoing)
 - Simple church webapp for information and directions to the the church, as well as a dynamic gallery/music page
 - Contractor app for moving company which included gps navigation & tracking
 
@@ -94,7 +99,7 @@ January 2018 to Present
 
 **Dexter K-12 School, Wichita Falls, TX**<br>
 *Email:* becca@dexterlearning.com; *Phone:* 940-613-0123<br>
-**Educator** October 2021 to Present
+**Educator** October 2021 to May 2022
 - Instruction of students from 5th-12th grade in Computer Science topics
 - Design and implementation of CS curriculum for all grade levels
 - Teaching the following courses: AP Computer Science, Advanced Computer Science Foundations, Mobile Game Design, Robotics, 3D Printing
@@ -103,7 +108,7 @@ January 2018 to Present
 **University of North Texas**<br>
 **Computer Science and Engineering Department, Denton, TX**<br>
 *Email*: cse@unt.edu; *Phone*: 940-565-2767<br>
-**Instructional Assistant** September 2020 to Present
+**Instructional Assistant** September 2020 to May 2022
 - Assisting instructors as needed in the operation or management of their course.
 - Grading of assignments for courses including Systems Programming, Computer
 Science II, and graduate Programming Languages
@@ -135,6 +140,7 @@ Game Production)
 **Midwestern State University**<br>
 **Physics Department, Wichita Falls, TX**<br>
 *Email*: physics.program@msutexas.edu, *Phone*: (940) 397-4184
+
 **Lab Instructor** June 2018 to August 2019
 - Prepare and teach lab instruction and experimentation for Physics I & II.
 - Assist students who are struggling with Physics concepts.
