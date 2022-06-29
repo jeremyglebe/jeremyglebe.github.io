@@ -1,12 +1,20 @@
+/* DOCUMENT ORIENTATION */
 body {
     padding-top: 15px;
-    color: white;
-    background-color: rgb(35, 35, 35);
+}
+
+a {
+    color: lightgray;
 }
 
 .page-head {
     text-align: center;
-    font-size: 5vmax;
+}
+
+/* COLOR THEME */
+body {
+    color: white;
+    background-color: rgb(35, 35, 35);
 }
 
 .pure-button {
@@ -14,10 +22,14 @@ body {
 }
 
 .button-secondary {
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     color: white;
     background: rgb(65, 65, 65);
+}
+
+/* COMPONENT STYLES FOR ALL SCREENS */
+.button-secondary {
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .filter-controls {
@@ -25,24 +37,15 @@ body {
 }
 
 .project {
-    margin: 10px 10% 10px 10%;
     border-style: solid;
     border-width: 3px;
     text-align: center;
-    color: white;
-    width: 80%;
 }
-
-.project-right-column {}
 
 .project-title,
 .project-thumb,
 .project-desc {
     margin: 0;
-}
-
-.project-title {
-    font-size: 4vmax;
 }
 
 .project-thumb {
@@ -56,23 +59,61 @@ body {
 
 .project-desc {
     padding: 5px;
+    overflow: hidden;
 }
 
+/* COMPONENT STYLES FOR LOW WIDTH SCREENS */
+.project {
+    margin: 10px 10% 10px 10%;
+    width: 80%;
+}
+
+.project-title {
+    font-size: 4vh;
+}
+
+.project-desc {
+    max-height: 30vh;
+}
+
+.page-head {
+    text-align: center;
+    font-size: 5vh;
+}
+
+/* COMPONENT STYLES FOR MEDIUM SCREENS */
 @media screen and (min-width: 48em) {
 
+    .page-head {
+        text-align: left;
+        font-size: 2.8em;
+        margin-left: 25px;
+    }
+
+    .filter-controls {
+        text-align: left;
+        margin-left: 25px;
+    }
+
     .project {
-        margin: 10px;
-        width: auto;
+        margin: 25px;
+        width: 75%;
+    }
+
+    .project-title {
+        font-size: 2em;
+    }
+
+    .project-desc {
+        max-height: 12vh;
     }
     
     .project-thumb {
-        border-style: solid;
         border-width: 0;
         border-right-width: 3px;
         height: 100%;
         width: 100%;
-        object-position: center;
-        object-fit: cover;
+        max-height: 25vh;
     }
-    
+
 }
