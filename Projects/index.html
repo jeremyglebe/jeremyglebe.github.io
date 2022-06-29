@@ -1,0 +1,66 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/pure-min.css" />
+    <link rel="stylesheet" href="styles/grids-responsive-min.css" />
+    <link rel="stylesheet" href="customs.css" />
+    <script src="lib/alpine.min.js" defer></script>
+</head>
+
+<body>
+    <!--Get all necessary data from script-->
+    <script src="script.js"></script>
+
+    <!--Page title-->
+    <h1 class="page-head">Full Projects Listing</h1>
+    <hr/>
+
+    <!--Project data is stored on key "projects_data"-->
+    <div x-data="getProjectsData()">
+
+        <!--A group of buttons intended to filter projects-->
+        <div class="filter-controls">
+            <h3 style="margin-bottom: 0px;">⊆ Filter</h3>
+            <div class="pure-button-group" role="group" aria-label="...">
+                <!--If a filter is currently active, display a button to remove filters-->
+                <button class="pure-button"
+                    x-bind:class="noFiltersSelected() ? 'pure-button pure-button-primary pure-button-active' : 'pure-button button-secondary'"
+                    x-on:click="onClickTag(null)">Show All</button>
+                <!--Displays a filter button for each possible tag-->
+                <template x-for="tag in allTags()">
+                    <button x-text="tag"
+                        x-bind:class="tagIsSelected(tag) ? 'pure-button pure-button-primary pure-button-active' : 'pure-button button-secondary'"
+                        x-on:click="onClickTag(tag)"></button>
+                </template>
+            </div>
+        </div>
+
+        <!--Iterates over all of the projects and displays them-->
+        <template x-for="proj in projectList">
+            <template x-if="tagListMatchesFilters(proj.tags)">
+                <div class="project pure-g">
+                    <div class="pure-u-1 pure-u-md-1-8">
+                        <img class="project-thumb" x-bind:src="'thumbs/' + proj.title + '.png'" />
+                    </div>
+                    <div class="project-right-column pure-u-1 pure-u-md-7-8">
+                        <p class="project-title" x-text="proj.title"></p>
+                        <p class="project-desc" x-text="proj.desc"></p>
+                    </div>
+                </div>
+            </template>
+        </template>
+
+        <!--Shows a message if no projects meet filter requirements-->
+        <template x-if="noMatchingProjects()">
+            <p>No projects match the selected filters</p>
+        </template>
+    </div>
+</body>
+
+<!--
+    Notes on Alpine
+        - Flow controls such as for loops (x-for) and if statements (x-if) may only be attached to <template> tags
+            - Flow control tags (<template>) may only contain a single top-level tag to show/hide/repeat
+              <template x-for="...">
+                <div>...multiple tags...</div>
+              </template>
+-->
