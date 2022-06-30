@@ -68,7 +68,7 @@ let projectsData = {
             desc: "Galactic Snake is a mobile friendly game about a giant robotic snake eating planets. "
                 + "It was originally developed as part of the Midwestern State University ACM Chapter's Spring 2021 Game Jam. "
                 + "It features authentication and a synchronized scoreboard in addition to its gameplay.",
-            tags: ["Phaser", "Games", "Mobile", "Javascript", "Typescript", "Capacitor"],
+            tags: ["Phaser", "Games", "Mobile", "Javascript", "Typescript", "Capacitor", "Firebase", "Backend"],
             srcLink: "https://github.com/jeremyglebe/galactic_snake",
             pubLink: "https://drowsyprof.itch.io/galactic-snake"
         },
@@ -88,8 +88,8 @@ let projectsData = {
                 + "After the assignment was completed and graded, I took an interest in it. "
                 + "I helped flesh out gameplay and visuals to make it an overall more enjoyable experience. "
                 + "The game is a bit like bejewled with some scary monsters and a space cowboy thrown into the mix.",
-            srcLink: "https://github.com/jeremyglebe/Spire_Panic",
-            pubLink: "https://drowsyprof.itch.io/spire-panic"
+            tags: ["Phaser", "Games", "Mobile", "Javascript", "Typescript"],
+            pubLink: "https://zachkingcade.itch.io/space-rpg-beta"
         },
         {
             title: "4",

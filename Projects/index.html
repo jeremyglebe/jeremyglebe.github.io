@@ -10,27 +10,61 @@
     <script src="script.js"></script>
 
     <!--Page title-->
-    <h1 class="page-head">Full Projects Listing</h1>
-    <hr />
+    <div class="hero is-info">
+        <div class="hero-body">
+            <h1 class="title">
+                Projects & Products
+            </h1>
+            <h2 class="subtitle">
+                A (mostly) complete listing of software & apps I've created
+            </h2>
+        </div>
+    </div>
 
     <!--Project data is stored on key "projects_data"-->
     <div x-data="getProjectsData()">
 
-        <!--A group of buttons intended to filter projects-->
-        <div class="filter-controls">
-            <h3 style="margin-bottom: 0px;">⊆ Filter</h3>
-            <div class="pure-button-group" role="group" aria-label="...">
-                <!--If a filter is currently active, display a button to remove filters-->
-                <button class="pure-button"
-                    x-bind:class="noFiltersSelected() ? 'pure-button pure-button-primary pure-button-active' : 'pure-button button-secondary'"
-                    x-on:click="onClickTag(null)">Show All</button>
-                <!--Displays a filter button for each possible tag-->
+        <div class="box my-filter-box my-invisible-scrollbar">
+
+            <h2 class="subtitle">Filter by tag
+                <template x-if="!noFiltersSelected()">
+                    <a x-on:click="onClickTag(null)">(Clear All)</a>
+                </template>
+            </h2>
+
+            <!--Group of active filters-->
+            <div class="field is-grouped is-grouped-multiline">
+                <!--Display tags for all active filters-->
                 <template x-for="tag in allTags()">
-                    <button x-text="tag"
-                        x-bind:class="tagIsSelected(tag) ? 'pure-button pure-button-primary pure-button-active' : 'pure-button button-secondary'"
-                        x-on:click="onClickTag(tag)"></button>
+                    <template x-if="tagIsSelected(tag)">
+                        <div class="control">
+                            <div class="tags has-addons">
+                                <span class="tag is-success" x-text="tag"></span>
+                                <a class="tag is-delete" x-on:click="onClickTag(tag)"></a>
+                            </div>
+                        </div>
+                    </template>
                 </template>
             </div>
+
+            <!--Just a horizontal bar separating the groups of tags-->
+            <hr />
+
+            <!--Group of inactive filters-->
+            <div class="field is-grouped is-grouped-multiline">
+                <!--Display tags for all active filters-->
+                <template x-for="tag in allTags()">
+                    <template x-if="!tagIsSelected(tag)">
+                        <div class="control">
+                            <div class="tags has-addons">
+                                <span class="tag is-primary" x-text="tag"></span>
+                                <a class="tag" x-on:click="onClickTag(tag)">+</a>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+            </div>
+
         </div>
 
         <!--2D grid of tiles-->
