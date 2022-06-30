@@ -107,7 +107,7 @@ body {
     .project-desc {
         max-height: 12vh;
     }
-    
+
     .project-thumb {
         border-width: 0;
         border-right-width: 3px;
@@ -116,4 +116,35 @@ body {
         max-height: 25vh;
     }
 
+}
+
+.my-tile-grid {
+    margin-top: 15px !important;
+}
+
+.my-card {
+    margin: 0 10px 0 10px;
+}
+
+.my-card-img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.my-pixel-img {
+    /* https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images */
+    image-rendering: optimizeSpeed;
+    /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;
+    /* Firefox                        */
+    image-rendering: -o-crisp-edges;
+    /* Opera                          */
+    image-rendering: -webkit-optimize-contrast;
+    /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;
+    /* Chrome */
+    image-rendering: optimize-contrast;
+    /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE8+                           */
 }

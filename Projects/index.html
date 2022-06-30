@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="styles/pure-min.css" />
     <link rel="stylesheet" href="styles/grids-responsive-min.css" />
     <link rel="stylesheet" href="customs.css" />
+    <link rel="stylesheet" href="styles/bulma.min.css" />
     <script src="lib/alpine.min.js" defer></script>
 </head>
 
@@ -34,27 +35,42 @@
             </div>
         </div>
 
-        <!--Iterates over all of the projects and displays them-->
-        <template x-for="proj in projectList">
-            <template x-if="tagListMatchesFilters(proj.tags)">
-                <div class="project pure-g">
-                    <div class="pure-u-1 pure-u-md-1-4">
-                        <img class="project-thumb" x-bind:src="'thumbs/' + proj.title + '.png'" />
+        <!--2D grid of tiles-->
+        <div class="tile is-ancestor my-tile-grid">
+            <!--Container causes tile rows to stack vertically-->
+            <div class="tile is-vertical">
+                <!--Iterates over all of the projects and displays them as cards-->
+                <template x-for="num in Math.ceil(projectList.length / 3)">
+                    <!--Creates a row with starting index for that row
+                    (for loop generates indices starting at 1, so we subtract 1)-->
+                    <div class="tile is-parent" x-data="{ i: num-1 }">
+                        <template x-for="proj in projectList.slice(i*3, i*3+3)">
+                            <template x-if="tagListMatchesFilters(proj.tags)">
+                                <div class="tile is-child is-4">
+                                    <div class="card my-card">
+                                        <div class="card-header">
+                                            <p class="card-header-title" x-text="proj.title"></p>
+                                        </div>
+                                        <div class="card-image">
+                                            <figure class="image is-square">
+                                                <img class="my-card-img my-pixel-img" x-bind:src="'thumbs/' + proj.title + '.png'" />
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="content" x-text="proj.desc"></div>
+                                        </div>
+                                        <footer class="card-footer">
+                                            <a class="card-footer-item" x-bind:href="proj.pubLink">View Project</a>
+                                            <a class="card-footer-item" x-bind:href="proj.srcLink">View Source</a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </template>
+                        </template>
                     </div>
-                    <div class="pure-u-1 pure-u-md-3-4">
-                        <p class="project-title" x-text="proj.title"></p>
-                        <hr />
-                        <div>
-                            <a x-bind:href="proj.pubLink">View Project Page</a>
-                            <div style="display: inline;">•</div>
-                            <a x-bind:href="proj.srcLink">View Project Source</a>
-                        </div>
-                        <hr />
-                        <p class="project-desc" x-text="proj.desc"></p>
-                    </div>
-                </div>
-            </template>
-        </template>
+                </template>
+            </div>
+        </div>
 
         <!--Shows a message if no projects meet filter requirements-->
         <template x-if="noMatchingProjects()">
@@ -70,4 +86,5 @@
               <template x-for="...">
                 <div>...multiple tags...</div>
               </template>
+        - Counting the index with a for loop (x-for="(thing, index) in list") starts counting from 1
 -->
