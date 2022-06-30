@@ -1,9 +1,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/pure-min.css" />
-    <link rel="stylesheet" href="styles/grids-responsive-min.css" />
-    <link rel="stylesheet" href="customs.css" />
     <link rel="stylesheet" href="styles/bulma.min.css" />
+    <link rel="stylesheet" href="customs.css" />
     <script src="lib/alpine.min.js" defer></script>
 </head>
 
@@ -53,10 +51,10 @@
                                         </div>
                                         <div class="card-image">
                                             <figure class="image is-square">
-                                                <img class="my-card-img my-pixel-img" x-bind:src="'thumbs/' + proj.title + '.png'" />
+                                                <img class="my-card-img" x-bind:src="'thumbs/' + proj.title + '.png'" />
                                             </figure>
                                         </div>
-                                        <div class="card-content">
+                                        <div class="card-content my-card-content my-invisible-scrollbar">
                                             <div class="content" x-text="proj.desc"></div>
                                         </div>
                                         <footer class="card-footer">

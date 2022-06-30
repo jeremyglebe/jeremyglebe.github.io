@@ -83,12 +83,11 @@ let projectsData = {
             pubLink: "https://drowsyprof.itch.io/spire-panic"
         },
         {
-            title: "3",
-            desc: "A downloadable tower-defense-like game for Windows featuring cute hats, lasers, and more. "
-                + "I wrote this for a game development class at UNT. "
-                + "We used a barebones engine, made by the professor, which served as a minimal wrapper for DirectX. "
-                + "This may not be my best, but it was probably the hardest game project I have ever worked on and I love it.",
-            tags: ["C++", "DirectX", "Games"],
+            title: "Space RPG",
+            desc: "Space RPG was originally developed by a friend and student of mine for my summer game design course. "
+                + "After the assignment was completed and graded, I took an interest in it. "
+                + "I helped flesh out gameplay and visuals to make it an overall more enjoyable experience. "
+                + "The game is a bit like bejewled with some scary monsters and a space cowboy thrown into the mix.",
             srcLink: "https://github.com/jeremyglebe/Spire_Panic",
             pubLink: "https://drowsyprof.itch.io/spire-panic"
         },
