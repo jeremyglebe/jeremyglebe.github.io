@@ -61,6 +61,11 @@ let projectsData = {
         return 'background-image: url("thumbs/' + title + '.png");';
     },
 
+    sortArrayByKey(arr, key) {
+        console.log(arr);
+        return arr.sort((a, b) => a[key] - b[key]);
+    },
+
     // A list of data entries for each project which may be displayed
     projectList: [
         {
@@ -131,7 +136,7 @@ let projectsData = {
             srcLink: "https://github.com/jeremyglebe/Spire_Panic",
             pubLink: "https://drowsyprof.itch.io/spire-panic"
         }
-    ]
+    ].sort((a, b) => a.title < b.title ? -1 : 1) // Sort the list before storing
 }
 
-function getProjectsData() { return projectsData }
+function getProjectsData() { console.log(projectsData); return projectsData }

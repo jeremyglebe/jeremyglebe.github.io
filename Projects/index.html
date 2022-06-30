@@ -9,7 +9,7 @@
     <!--Get all necessary data from script-->
     <script src="script.js"></script>
 
-    <!--Page title-->
+    <!--Page header with a banner-->
     <div class="hero is-info">
         <div class="hero-body">
             <h1 class="title">
@@ -71,9 +71,9 @@
         <div class="tile is-ancestor my-tile-grid">
             <!--Container causes tile rows to stack vertically-->
             <div class="tile is-vertical">
-                <!--Iterates over all of the projects and displays them as cards-->
+                <!--Generate a number of 3 card rows equal to 1/3rd the project list length-->
                 <template x-for="num in Math.ceil(projectList.length / 3)">
-                    <!--Creates a row with starting index for that row
+                    <!--Creates a row of tiles and provides index to inner loop
                     (for loop generates indices starting at 1, so we subtract 1)-->
                     <div class="tile is-parent" x-data="{ i: num-1 }">
                         <template x-for="proj in projectList.slice(i*3, i*3+3)">
