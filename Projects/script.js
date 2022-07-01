@@ -62,8 +62,16 @@ let projectsData = {
     },
 
     sortArrayByKey(arr, key) {
-        console.log(arr);
-        return arr.sort((a, b) => a[key] - b[key]);
+        return arr.sort((a, b) => a[key] < b[key] ? -1 : 1);
+    },
+
+    getFilteredProjectList() {
+        return this.projectList.filter((p) => {
+            for (let f of this.activeFilters) {
+                if (!p.tags.includes(f)) return false;
+            }
+            return true;
+        });
     },
 
     // A list of data entries for each project which may be displayed

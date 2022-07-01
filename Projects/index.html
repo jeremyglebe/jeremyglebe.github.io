@@ -72,32 +72,30 @@
             <!--Container causes tile rows to stack vertically-->
             <div class="tile is-vertical">
                 <!--Generate a number of 3 card rows equal to 1/3rd the project list length-->
-                <template x-for="num in Math.ceil(projectList.length / 3)">
+                <template x-for="num in Math.ceil(getFilteredProjectList().length / 3)">
                     <!--Creates a row of tiles and provides index to inner loop
                     (for loop generates indices starting at 1, so we subtract 1)-->
                     <div class="tile is-parent" x-data="{ i: num-1 }">
-                        <template x-for="proj in projectList.slice(i*3, i*3+3)">
-                            <template x-if="tagListMatchesFilters(proj.tags)">
-                                <div class="tile is-child is-4">
-                                    <div class="card my-card">
-                                        <div class="card-header">
-                                            <p class="card-header-title" x-text="proj.title"></p>
-                                        </div>
-                                        <div class="card-image">
-                                            <figure class="image is-square">
-                                                <img class="my-card-img" x-bind:src="'thumbs/' + proj.title + '.png'" />
-                                            </figure>
-                                        </div>
-                                        <div class="card-content my-card-content my-invisible-scrollbar">
-                                            <div class="content" x-text="proj.desc"></div>
-                                        </div>
-                                        <footer class="card-footer">
-                                            <a class="card-footer-item" x-bind:href="proj.pubLink">View Project</a>
-                                            <a class="card-footer-item" x-bind:href="proj.srcLink">View Source</a>
-                                        </footer>
+                        <template x-for="proj in getFilteredProjectList().slice(i*3, i*3+3)">
+                            <div class="tile is-child is-4">
+                                <div class="card my-card">
+                                    <div class="card-header">
+                                        <p class="card-header-title" x-text="proj.title"></p>
                                     </div>
+                                    <div class="card-image">
+                                        <figure class="image is-square">
+                                            <img class="my-card-img" x-bind:src="'thumbs/' + proj.title + '.png'" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-content my-card-content my-invisible-scrollbar">
+                                        <div class="content" x-text="proj.desc"></div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a class="card-footer-item" x-bind:href="proj.pubLink">View Project</a>
+                                        <a class="card-footer-item" x-bind:href="proj.srcLink">View Source</a>
+                                    </footer>
                                 </div>
-                            </template>
+                            </div>
                         </template>
                     </div>
                 </template>
@@ -106,7 +104,7 @@
 
         <!--Shows a message if no projects meet filter requirements-->
         <template x-if="noMatchingProjects()">
-            <p>No projects match the selected filters</p>
+            <p style="margin-left:15px">No projects match the selected filters</p>
         </template>
     </div>
 </body>
