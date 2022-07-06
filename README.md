@@ -11,7 +11,6 @@ If you wish to see an updated overview of my skills and work experience, [visit 
 | [Math](/Math/)              | [/Math/](/Math/)             |
 | [Art & Animation](/Art/)    | [/Art/](/Art/)               |
 | [Game Programming](/Games/) | [/Games/](/Games/)           |
-| [Random Stuff](/Random/)    | [/Random/](/Random/)         |
 
 # Tutorials
 
