@@ -1,5 +1,5 @@
-![Oh wow, it's me!](me.png)
-## Curriculum Vitae/Resume
+![Oh wow, it's me!](./me.png)
+## Resume
 If you wish to see an updated overview of my skills and work experience, [visit my Resume](/Resume/) page, which should generally stay up to date.
 
 # Project Reference (Portfolio)
