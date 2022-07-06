@@ -103,48 +103,11 @@ let projectsData = {
                 + "The game is a bit like bejewled with some scary monsters and a space cowboy thrown into the mix.",
             tags: ["Phaser", "Games", "Mobile", "Javascript", "Typescript"],
             pubLink: "https://zachkingcade.itch.io/space-rpg-beta"
-        },
-        {
-            title: "4",
-            desc: "A downloadable tower-defense-like game for Windows featuring cute hats, lasers, and more. "
-                + "I wrote this for a game development class at UNT. "
-                + "We used a barebones engine, made by the professor, which served as a minimal wrapper for DirectX. "
-                + "This may not be my best, but it was probably the hardest game project I have ever worked on and I love it.",
-            tags: ["C++", "DirectX", "Games"],
-            srcLink: "https://github.com/jeremyglebe/Spire_Panic",
-            pubLink: "https://drowsyprof.itch.io/spire-panic"
-        },
-        {
-            title: "5",
-            desc: "A downloadable tower-defense-like game for Windows featuring cute hats, lasers, and more. "
-                + "I wrote this for a game development class at UNT. "
-                + "We used a barebones engine, made by the professor, which served as a minimal wrapper for DirectX. "
-                + "This may not be my best, but it was probably the hardest game project I have ever worked on and I love it.",
-            tags: ["C++", "DirectX", "Games"],
-            srcLink: "https://github.com/jeremyglebe/Spire_Panic",
-            pubLink: "https://drowsyprof.itch.io/spire-panic"
-        },
-        {
-            title: "6",
-            desc: "A downloadable tower-defense-like game for Windows featuring cute hats, lasers, and more. "
-                + "I wrote this for a game development class at UNT. "
-                + "We used a barebones engine, made by the professor, which served as a minimal wrapper for DirectX. "
-                + "This may not be my best, but it was probably the hardest game project I have ever worked on and I love it.",
-            tags: ["C++", "DirectX", "Games"],
-            srcLink: "https://github.com/jeremyglebe/Spire_Panic",
-            pubLink: "https://drowsyprof.itch.io/spire-panic"
-        },
-        {
-            title: "7",
-            desc: "A downloadable tower-defense-like game for Windows featuring cute hats, lasers, and more. "
-                + "I wrote this for a game development class at UNT. "
-                + "We used a barebones engine, made by the professor, which served as a minimal wrapper for DirectX. "
-                + "This may not be my best, but it was probably the hardest game project I have ever worked on and I love it.",
-            tags: ["C++", "DirectX", "Games"],
-            srcLink: "https://github.com/jeremyglebe/Spire_Panic",
-            pubLink: "https://drowsyprof.itch.io/spire-panic"
         }
     ].sort((a, b) => a.title < b.title ? -1 : 1) // Sort the list before storing
 }
 
 function getProjectsData() { console.log(projectsData); return projectsData }
+function isSmall() { return screen.width <= 640 }
+function isMedium() { return screen.width > 640 && screen.width <= 1007 }
+function isLarge() { return screen.width > 1007 }

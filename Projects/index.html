@@ -67,40 +67,101 @@
 
         </div>
 
-        <!--2D grid of tiles-->
-        <div class="tile is-ancestor my-tile-grid">
-            <!--Container causes tile rows to stack vertically-->
-            <div class="tile is-vertical">
-                <!--Generate a number of 3 card rows equal to 1/3rd the project list length-->
-                <template x-for="num in Math.ceil(getFilteredProjectList().length / 3)">
-                    <!--Creates a row of tiles and provides index to inner loop
+        <!--On LARGE screens use a 2D grid of 6-tile rows to display projects-->
+        <template x-if="isLarge()">
+            <div class="tile is-ancestor my-tile-grid">
+                <!--Container causes tile rows to stack vertically-->
+                <div class="tile is-vertical">
+                    <!--Generate a number of 3 card rows equal to 1/3rd the project list length-->
+                    <template x-for="num in Math.ceil(getFilteredProjectList().length / 6)">
+                        <!--Creates a row of tiles and provides index to inner loop
                     (for loop generates indices starting at 1, so we subtract 1)-->
-                    <div class="tile is-parent" x-data="{ i: num-1 }">
-                        <template x-for="proj in getFilteredProjectList().slice(i*3, i*3+3)">
-                            <div class="tile is-child is-4">
-                                <div class="card my-card">
-                                    <div class="card-header">
-                                        <p class="card-header-title" x-text="proj.title"></p>
+                        <div class="tile is-parent" x-data="{ i: num-1 }">
+                            <template x-for="proj in getFilteredProjectList().slice(i*6, i*6+6)">
+                                <div class="tile is-child is-2">
+                                    <div class="card my-card">
+                                        <div class="card-header">
+                                            <p class="card-header-title" x-text="proj.title"></p>
+                                        </div>
+                                        <div class="card-image">
+                                            <figure class="image is-square">
+                                                <img class="my-card-img" x-bind:src="'thumbs/' + proj.title + '.png'" />
+                                            </figure>
+                                        </div>
+                                        <div class="card-content my-card-content my-invisible-scrollbar">
+                                            <div class="content" x-text="proj.desc"></div>
+                                        </div>
+                                        <footer class="card-footer">
+                                            <a class="card-footer-item" x-bind:href="proj.pubLink">View Project</a>
+                                            <a class="card-footer-item" x-bind:href="proj.srcLink">View Source</a>
+                                        </footer>
                                     </div>
-                                    <div class="card-image">
-                                        <figure class="image is-square">
-                                            <img class="my-card-img" x-bind:src="'thumbs/' + proj.title + '.png'" />
-                                        </figure>
-                                    </div>
-                                    <div class="card-content my-card-content my-invisible-scrollbar">
-                                        <div class="content" x-text="proj.desc"></div>
-                                    </div>
-                                    <footer class="card-footer">
-                                        <a class="card-footer-item" x-bind:href="proj.pubLink">View Project</a>
-                                        <a class="card-footer-item" x-bind:href="proj.srcLink">View Source</a>
-                                    </footer>
                                 </div>
-                            </div>
-                        </template>
-                    </div>
-                </template>
+                            </template>
+                        </div>
+                    </template>
+                </div>
             </div>
-        </div>
+        </template>
+
+        <!--On LARGE screens use a 2D grid of 3-tile rows to display projects-->
+        <template x-if="isMedium()">
+            <div class="tile is-ancestor my-tile-grid">
+                <!--Container causes tile rows to stack vertically-->
+                <div class="tile is-vertical">
+                    <!--Generate a number of 3 card rows equal to 1/3rd the project list length-->
+                    <template x-for="num in Math.ceil(getFilteredProjectList().length / 3)">
+                        <!--Creates a row of tiles and provides index to inner loop
+                    (for loop generates indices starting at 1, so we subtract 1)-->
+                        <div class="tile is-parent" x-data="{ i: num-1 }">
+                            <template x-for="proj in getFilteredProjectList().slice(i*3, i*3+3)">
+                                <div class="tile is-child is-4">
+                                    <div class="card my-card">
+                                        <div class="card-header">
+                                            <p class="card-header-title" x-text="proj.title"></p>
+                                        </div>
+                                        <div class="card-image">
+                                            <figure class="image is-square">
+                                                <img class="my-card-img" x-bind:src="'thumbs/' + proj.title + '.png'" />
+                                            </figure>
+                                        </div>
+                                        <div class="card-content my-card-content my-invisible-scrollbar">
+                                            <div class="content" x-text="proj.desc"></div>
+                                        </div>
+                                        <footer class="card-footer">
+                                            <a class="card-footer-item" x-bind:href="proj.pubLink">View Project</a>
+                                            <a class="card-footer-item" x-bind:href="proj.srcLink">View Source</a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </template>
+
+        <!--On SMALL screens use a list of cards to display projects-->
+        <template x-if="isSmall()">
+            <template x-for="proj in getFilteredProjectList()">
+                <div class="box my-list-box">
+                    <p class="my-list-box-title" x-text="proj.title"></p>
+                    <p class="my-list-box-title">
+                        <a x-bind:href="proj.pubLink">View Project</a>
+                        •
+                        <a x-bind:href="proj.srcLink">View Source</a>
+                    </p>
+                    <div class="my-list-box-img">
+                        <figure class="image is-square">
+                            <img class="my-card-img" x-bind:src="'thumbs/' + proj.title + '.png'" />
+                        </figure>
+                    </div>
+                    <div class="my-list-box-content my-invisible-scrollbar">
+                        <p x-text="proj.desc"></p>
+                    </div>
+                </div>
+            </template>
+        </template>
 
         <!--Shows a message if no projects meet filter requirements-->
         <template x-if="noMatchingProjects()">

@@ -48,5 +48,28 @@
 }
 
 .my-card-content {
-    height: 20vw;
+    height: 10vw;
+}
+
+.my-list-box {
+}
+
+.my-list-box-title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.my-list-box-img {
+    width: 25%;
+    display: inline-block;
+    margin: 0;
+}
+
+.my-list-box-content {
+    width: 70%;
+    display: inline-block;
+    max-height: 15vh;
+    margin: 0;
 }
