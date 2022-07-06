@@ -1,12 +1,13 @@
-// Object representing all data associated with the projects page
-let projectsData = {
-    // The active (selected) tag to filter by
-    activeFilters: new Set(),
+let DataService = {
+    // PROPERTIES
 
-    // Method which produces a list of all tags in all projects
-    allTags() {
+    activeTags: new Set(),
+
+    // GETTERS
+
+    Tags() {
         let all = new Set();
-        for (let project of this.projectList) {
+        for (let project of this.Projects()) {
             for (let tag of project.tags) {
                 all.add(tag);
             }
@@ -14,68 +15,65 @@ let projectsData = {
         return [...all].sort();
     },
 
-    // Method which checks if a single tag is active
-    tagIsSelected(tag) {
-        return this.activeFilters.has(tag);
+    ActiveTags() {
+        return this.activeTags;
     },
 
-    // Method which determines if a list of tags meets the requirements of a filtering list
-    tagListMatchesFilters(tags) {
-        for (let filter of this.activeFilters)
-            if (!tags.includes(filter)) return false;
-        return true;
+    Projects() {
+        return projects.sort((a, b) => a.title < b.title ? -1 : 1);
     },
 
-    // Method which checks if there are any active tag filters
-    noFiltersSelected() {
-        return this.activeFilters.size === 0;
-    },
-
-    // Method which checks if there are no valid projects based on current filters
-    noMatchingProjects() {
-        for (let proj of this.projectList) {
-            if (this.tagListMatchesFilters(proj.tags)) {
-                return false;
+    FilteredProjects() {
+        return this.Projects().filter(
+            (p) => {
+                for (let f of this.ActiveTags()) {
+                    if (!p.tags.includes(f)) return false;
+                }
+                return true;
             }
-        }
-        return true;
+        );
     },
 
-    // Method to handle clicking on tag filters
-    onClickTag(tag) {
+    // BUILDERS
+
+    ThumbStyleURL(projectTitle) {
+        return 'background-image: url("thumbs/' + projectTitle + '.png");';
+    },
+
+    // HANDLERS
+
+    OnTagClicked(tag) {
         // If tag is null or otherwise invalid, reset filters (this is done intentionally with "Show All" button)
         if (!tag) {
-            this.activeFilters.clear()
+            this.ActiveTags().clear()
         }
         // If the tag is already in the filter list, remove it
-        else if (this.activeFilters.has(tag)) {
-            this.activeFilters.delete(tag);
+        else if (this.ActiveTags().has(tag)) {
+            this.ActiveTags().delete(tag);
         }
         // If the tag is not in the filter list, add it
         else {
-            this.activeFilters.add(tag);
+            this.ActiveTags().add(tag);
         }
     },
 
-    createThumbImageStyleURL(title) {
-        return 'background-image: url("thumbs/' + title + '.png");';
+    // CHECKS
+
+    IsFiltered() {
+        return this.activeTags.size > 0;
     },
 
-    sortArrayByKey(arr, key) {
-        return arr.sort((a, b) => a[key] < b[key] ? -1 : 1);
+    IsNoResults() {
+        return this.FilteredProjects().length === 0;
     },
 
-    getFilteredProjectList() {
-        return this.projectList.filter((p) => {
-            for (let f of this.activeFilters) {
-                if (!p.tags.includes(f)) return false;
-            }
-            return true;
-        });
+    IsTagActive(tag) {
+        return this.activeTags.has(tag);
     },
+}
 
-    // A list of data entries for each project which may be displayed
-    projectList: [
+let projects =
+    [
         {
             title: "Galactic Snake",
             desc: "Galactic Snake is a mobile friendly game about a giant robotic snake eating planets. "
@@ -104,10 +102,4 @@ let projectsData = {
             tags: ["Phaser", "Games", "Mobile", "Javascript", "Typescript"],
             pubLink: "https://zachkingcade.itch.io/space-rpg-beta"
         }
-    ].sort((a, b) => a.title < b.title ? -1 : 1) // Sort the list before storing
-}
-
-function getProjectsData() { console.log(projectsData); return projectsData }
-function isSmall() { return screen.width <= 640 }
-function isMedium() { return screen.width > 640 && screen.width <= 1007 }
-function isLarge() { return screen.width > 1007 }
+    ];

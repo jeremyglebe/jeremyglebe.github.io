@@ -2,12 +2,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bulma.min.css" />
     <link rel="stylesheet" href="customs.css" />
-    <script src="lib/alpine.min.js" defer></script>
+    <script src="scripts/lib/alpine.min.js" defer></script>
 </head>
 
 <body>
-    <!--Get all necessary data from script-->
-    <script src="script.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/size.js"></script>
 
     <!--Page header with a banner-->
     <div class="hero is-info">
@@ -22,25 +22,25 @@
     </div>
 
     <!--Project data is stored on key "projects_data"-->
-    <div x-data="getProjectsData()">
+    <div x-data="DataService">
 
         <div class="box my-filter-box my-invisible-scrollbar">
 
             <h2 class="subtitle">Filter by tag
-                <template x-if="!noFiltersSelected()">
-                    <a x-on:click="onClickTag(null)">(Clear All)</a>
+                <template x-if="IsFiltered()">
+                    <a x-on:click="OnTagClicked(null)">(Clear All)</a>
                 </template>
             </h2>
 
             <!--Group of active filters-->
             <div class="field is-grouped is-grouped-multiline">
                 <!--Display tags for all active filters-->
-                <template x-for="tag in allTags()">
-                    <template x-if="tagIsSelected(tag)">
+                <template x-for="tag in Tags()">
+                    <template x-if="IsTagActive(tag)">
                         <div class="control">
                             <div class="tags has-addons">
                                 <span class="tag is-success" x-text="tag"></span>
-                                <a class="tag is-delete" x-on:click="onClickTag(tag)"></a>
+                                <a class="tag is-delete" x-on:click="OnTagClicked(tag)"></a>
                             </div>
                         </div>
                     </template>
@@ -53,12 +53,12 @@
             <!--Group of inactive filters-->
             <div class="field is-grouped is-grouped-multiline">
                 <!--Display tags for all active filters-->
-                <template x-for="tag in allTags()">
-                    <template x-if="!tagIsSelected(tag)">
+                <template x-for="tag in Tags()">
+                    <template x-if="!IsTagActive(tag)">
                         <div class="control">
                             <div class="tags has-addons">
                                 <span class="tag is-primary" x-text="tag"></span>
-                                <a class="tag" x-on:click="onClickTag(tag)">+</a>
+                                <a class="tag" x-on:click="OnTagClicked(tag)">+</a>
                             </div>
                         </div>
                     </template>
@@ -73,11 +73,11 @@
                 <!--Container causes tile rows to stack vertically-->
                 <div class="tile is-vertical">
                     <!--Generate a number of 3 card rows equal to 1/3rd the project list length-->
-                    <template x-for="num in Math.ceil(getFilteredProjectList().length / 6)">
+                    <template x-for="num in Math.ceil(FilteredProjects().length / 6)">
                         <!--Creates a row of tiles and provides index to inner loop
                     (for loop generates indices starting at 1, so we subtract 1)-->
                         <div class="tile is-parent" x-data="{ i: num-1 }">
-                            <template x-for="proj in getFilteredProjectList().slice(i*6, i*6+6)">
+                            <template x-for="proj in FilteredProjects().slice(i*6, i*6+6)">
                                 <div class="tile is-child is-2">
                                     <div class="card my-card">
                                         <div class="card-header">
@@ -110,11 +110,11 @@
                 <!--Container causes tile rows to stack vertically-->
                 <div class="tile is-vertical">
                     <!--Generate a number of 3 card rows equal to 1/3rd the project list length-->
-                    <template x-for="num in Math.ceil(getFilteredProjectList().length / 3)">
+                    <template x-for="num in Math.ceil(FilteredProjects().length / 3)">
                         <!--Creates a row of tiles and provides index to inner loop
                     (for loop generates indices starting at 1, so we subtract 1)-->
                         <div class="tile is-parent" x-data="{ i: num-1 }">
-                            <template x-for="proj in getFilteredProjectList().slice(i*3, i*3+3)">
+                            <template x-for="proj in FilteredProjects().slice(i*3, i*3+3)">
                                 <div class="tile is-child is-4">
                                     <div class="card my-card">
                                         <div class="card-header">
@@ -143,7 +143,7 @@
 
         <!--On SMALL screens use a list of cards to display projects-->
         <template x-if="isSmall()">
-            <template x-for="proj in getFilteredProjectList()">
+            <template x-for="proj in FilteredProjects()">
                 <div class="box my-list-box">
                     <p class="my-list-box-title" x-text="proj.title"></p>
                     <p class="my-list-box-title">
@@ -164,7 +164,7 @@
         </template>
 
         <!--Shows a message if no projects meet filter requirements-->
-        <template x-if="noMatchingProjects()">
+        <template x-if="IsNoResults()">
             <p style="margin-left:15px">No projects match the selected filters</p>
         </template>
     </div>
