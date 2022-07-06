@@ -60,12 +60,12 @@ numerous public projects, as well as study and experience in programming paradig
 
 ### Additional Skills
 #### Computer Science
-- **Systems Automation.** Experience from Big Data and AI classes at UNT.
+- **Systems Automation.** Experience from Big Data, Data Science and AI classes at UNT.
 - **Functional Programming.** Including untyped programming, lambda calculus, pattern matching, and recursion.
 - **Logical Programming.** Including propositional and predicate logic, higher order predicates, grammars, and parsing.
 
 #### Development Tools
-- **Languages:** C, PHP, Java, C#, Go, Perl, Assembly, Dart, Lua, Julia, Haskell, Prolog, Swift, Kotlin
+- **Languages:** C#, C, PHP, Java, Go, Perl, Assembly, Dart, Lua, Julia, Haskell, Prolog, Swift, Kotlin
 - **Frameworks & Libraries:** React, Vue, P5.js
 - **Databases & Servers:** SQL (MySQL), MongoDB
 - **Editors & IDEs:** Visual Studio, Netbeans, PyCharm, Android Studio, XCode 
@@ -74,7 +74,7 @@ numerous public projects, as well as study and experience in programming paradig
 
 ## Work Experience
 ### Summary
-I have 4 years of work experience developing web and mobile applications. I 4 years of work experience in education, including K-12 and college level courses.
+I have 4 years of work experience developing web and mobile applications. I have 4 years of work experience in education, including K-12 and college level courses.
 
 ### Software
 
