@@ -19,3 +19,5 @@ unfortunately, but if you wish to inquire regarding other projects listed on my 
 | Categories                                 | Link                                         |
 | ------------------------------------------ | -------------------------------------------- |
 | [Dev Tool Tutorials](/dev_tool_tutorials/) | [/dev_tool_tutorials/](/dev_tool_tutorials/) |
+
+_This site is still a work-in-progress. I haven't had the time to develop a full personal site just yet (I've been working!) but I plan to soon! If there is any information you need, feel free to contact me at [jeremyglebe@gmail.com](mailto:jeremyglebe@gmail.com)
