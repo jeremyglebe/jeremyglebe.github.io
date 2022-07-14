@@ -1,4 +1,4 @@
-<img src="./me.png" alt="Oh wow, it's me!" width="300px"/>
+<img src="./me.png" alt="Oh wow, it's me!" width="200px" style="display: block; margin: auto; border-radius: 100px; border-style: solid;"/>
 
 ## Resume
 If you wish to see an updated overview of my skills and work experience, [visit my Resume](/Resume/) page, which should generally stay up to date.
