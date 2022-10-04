@@ -15,7 +15,7 @@ Software developer specializing in mobile and web application development. 6 yea
   - Midwestern State University • Wichita Falls, TX • 3.7/3.9 GPA
 
 ### Background
-**Factset Research Systems, Remote**
+**Factset Research Systems, Remote**<br>
 **Contractor: Mobile Developer** Aug 2022 to Present
 - Working on mobile financial applications
 - Primarily developing in Typescript using Vue.js
