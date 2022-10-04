@@ -6,7 +6,7 @@ Grapevine, TX 76051 • jeremyglebe@gmail.com • (940)-781-6316
 - [**LinkedIn** • https://www.linkedin.com/in/jeremy-glebe-7630a6221](https://www.linkedin.com/in/jeremy-glebe-7630a6221)
 
 ### Summary
-Software developer specializing in mobile and web application development. 6 years of experience building software for private businesses, healthcare, and human resources applications. Formerly an educator with 4 years of experience ranging from K-12 to college seniors.
+Software developer specializing in mobile and web application development. 6 years of experience building software for private businesses, healthcare, and human resources applications. Formerly an educator with 4 years of experience teaching at nearly every education level. (Ranging from 5th grade to seniors in college) I am a lifelong learner and a passionate developer.
 
 ### Education
 - **M.S. Computer Science** (In-Progress, 2023)
@@ -15,9 +15,15 @@ Software developer specializing in mobile and web application development. 6 yea
   - Midwestern State University • Wichita Falls, TX • 3.7/3.9 GPA
 
 ### Background
+**Factset Research Systems, Remote**
+**Contractor: Mobile Developer** Aug 2022 to Present
+- Working on mobile financial applications
+- Primarily developing in Typescript using Vue.js
+- Some work completed on native shells (ios and android)
+
 **Christus Health, Irving, TX**<br>
 *Address:* 919 Hidden Ridge, Irving, TX 75038; *Phone:* (469) 282-2000<br>
-**Mobile Developer** May 2022 to Present
+**Mobile Developer** May 2022 to Aug 2022
 - Implementation of native mobile apps integrated with EHR systems
 - Design of emergency alert systems and mobile app integration
 - Projects built in Xamarin (C#, .NET) as well as native (Kotlin, Swift)
@@ -39,13 +45,13 @@ Since January 2018 (Ongoing)
 **Adjunct Professor** Jan 2021 to July 2021
 - Designed course material for courses and instructed classes of students ranging from freshmen to seniors.
 
-### Language Proficiencies
+### Languages
 | Advanced                                               | Intermediate                                   | Novice                                                            |
 | ------------------------------------------------------ | ---------------------------------------------- | ----------------------------------------------------------------- |
 | I have extensive experience with these languages.      | I am reasonably familiar with these languages. | I am familiar with the basic rules and syntax of these languages. |
 | Javascript, Typescript, C#, Kotlin, Swift, Python, C++ | C, Java, PHP                                   | Assembly, Go, Perl, Lua, Dart, Julia, Haskell, Prolog             |
 
-### Tool Proficiencies
+### Tools
 | Category                            | Experienced                                              | Familiar                                                                |
 | ----------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------- |
 |                                     | I use these tools frequently and am comfortable doing so | I have used these tools in the past and have some familiarity with them |
