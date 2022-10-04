@@ -6,7 +6,7 @@ Grapevine, TX 76051 • jeremyglebe@gmail.com • (940)-781-6316
 - [**LinkedIn** • https://www.linkedin.com/in/jeremy-glebe-7630a6221](https://www.linkedin.com/in/jeremy-glebe-7630a6221)
 
 ### Summary
-Software developer specializing in mobile and web application development. 6 years of experience building software for private businesses, healthcare, and human resources applications. Formerly an educator with 4 years of experience teaching at nearly every education level. (Ranging from 5th grade to seniors in college) I am a lifelong learner and a passionate developer.
+Software developer specializing in mobile and web application development. I have experience building software for private businesses, healthcare, and human resources applications. Formerly an educator with experience teaching at nearly every education level. (Ranging from 5th grade to seniors in college) I am a lifelong learner and a passionate developer.
 
 ### Education
 - **M.S. Computer Science** (In-Progress, 2023)
