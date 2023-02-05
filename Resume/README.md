@@ -1,5 +1,5 @@
 ---
-layout: just-content
+layout: content
 ---
 
 <style>
