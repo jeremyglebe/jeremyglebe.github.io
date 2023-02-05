@@ -1,2 +1,0 @@
-### My Teaching Philosphy
-I believe in teaching by walking with students and learning by construction. My classroom strategy is to learn and re-learn alongside students while providing them projects worth making and guidance to do so. To that end, I have a preference for project-based work and demonstration of otherwise abstract concepts. My goal is for students to learn something tangible which sparks their curiosity for the future.
