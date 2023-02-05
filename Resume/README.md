@@ -1,6 +1,5 @@
 ---
-layout: just-title
-title: About
+layout: just-content
 ---
 
 <style>
