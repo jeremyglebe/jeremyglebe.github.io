@@ -1,7 +1,3 @@
----
-layout: just-content
----
-
 <style>
   h1 {
     /* center, bold h1 headers */
