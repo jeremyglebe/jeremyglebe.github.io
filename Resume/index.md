@@ -57,6 +57,8 @@ I have been programming in JavaScript for over 7 years and am proficient with an
 - Debugging and correcting errors in the existing codebase which causes crashes or otherwise affects user experience
 - Maintaining and improving native shells (iOS, Android) for packaging the Vue.js application as a mobile app
 
+<div class="page-break"></div>
+
 ### Christus Health (Irving, TX)
 **Application Developer** May 2022 - August 2022
 - Implementation of native mobile apps integrated with Electronic Health Record systems
@@ -66,8 +68,6 @@ I have been programming in JavaScript for over 7 years and am proficient with an
 - Management of Apple app standards for iOS applications
 - Design of emergency alert systems and mobile app integration using Xamarin (C#, .NET)
   - Integrating with existing hospital systems and Okta authentication
-
-<div class="page-break"></div>
 
 ### Silver Bullet Web Solutions (Bowie, TX)
 **Software Engineer** April 2021 - April 2022
@@ -96,6 +96,8 @@ I have been programming in JavaScript for over 7 years and am proficient with an
 ### Midwestern State University (Wichita Falls, TX)
 **Adjunct Professor (Computer Science)** January 2021 - July 2021
 - Designed course material for courses and instructed classes of students ranging from freshmen to seniors.
+
+<div class="page-break"></div>
 
 ## Education
 - **M.S. Computer Science** (May 2023)
