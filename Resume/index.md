@@ -34,9 +34,19 @@ layout: no-header
 
 
 ## Summary
-I have been programming in JavaScript for over 5 years and am proficient with and without modern frameworks. I have 2 years of professional experience developing Angular and Vue web applications, as well as some work on native mobile apps. I am a former educator which has provided me much insight on collaborative learning and cooperative development. I am currently seeking a full-time position as a software developer.
+I have been programming in JavaScript for over 7 years and am proficient with and without modern frameworks. I have 3 years of professional experience developing Angular and Vue web applications, as well as some work on native mobile apps. I am an educator with experience teaching 5th grade all the way through college seniors. This has provided me much insight on collaborative learning and cooperative development. I am considering positions in software development, education, or a combination of the two.
 
 ## Background
+
+### Security Service Federal Credit Union (Remote, San Antonio, TX)
+**Hybrid Mobile Developer** March 2023 - Present
+- Development of mobile banking app for use by members of the credit union
+- Ionic cross-platform development for iOS and Android
+  - Utilized Capacitor for native shell and deployment
+  - Codebase utilized Typescript and Angular for the frontend
+- Integration with existing banking systems and APIs
+- Developed a modern Dashboard for monitoring reports from the mobile app and other internal applications
+- Modified and integrated .NET APIs for use with the mobile app and Dashboard (C#)
 
 ### Factset Research Systems (Remote)
 **Software Engineer (Contractor)** August 2022 - February 2023
@@ -69,12 +79,26 @@ I have been programming in JavaScript for over 5 years and am proficient with an
   - Deployed using a general purpose Apache web server
   - Tested against common PWA requirements via Lighthouse audits
 
+### Dexter School (Wichita Falls, TX)
+**Computer Science Educator** October 2021 - May 2022
+- Instruction of students from 5th-12th grade in Computer Science topics
+- Design and implementation of CS curriculum for all grade levels
+- Courses I taught:
+  - AP Computer Science
+  - Advanced Computer Science Foundations
+  - Mobile Game Design
+  - Robotics
+  - 3D Printing
+- Additional courses I tutored:
+  - Computer Science Foundations
+  - Scratch Programming
+
 ### Midwestern State University (Wichita Falls, TX)
 **Adjunct Professor (Computer Science)** January 2021 - July 2021
 - Designed course material for courses and instructed classes of students ranging from freshmen to seniors.
 
 ## Education
-- **M.S. Computer Science** (In-Progress, 2023)
-  - University of North Texas • Denton, TX • 3.1 GPA
-- **B.S. Computer Science** (2019)
+- **M.S. Computer Science** (May 2023)
+  - University of North Texas • Denton, TX • 3.5 GPA
+- **B.S. Computer Science** (December 2019)
   - Midwestern State University • Wichita Falls, TX • 3.7/3.9 GPA
