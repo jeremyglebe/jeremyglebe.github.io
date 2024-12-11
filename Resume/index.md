@@ -34,17 +34,17 @@ layout: no-header
 
 
 ## Summary
-I have been programming in JavaScript for over 7 years and am proficient with and without modern frameworks. I have 3 years of professional experience developing Angular and Vue web applications, as well as some work on native mobile apps. I am an educator with experience teaching 5th grade all the way through college seniors. This has provided me much insight on collaborative learning and cooperative development. I am considering positions in software development, education, or a combination of the two.
+I have been developing software my entire life. I have a lot of practice working in JavaScript (for over 7 years!) and am proficient with many modern frameworks. I have 3 years of professional experience developing Angular and Vue web applications, as well as some work on native mobile apps. I am an educator with experience teaching 5th grade all the way through college seniors. This has provided me much insight on collaborative learning and cooperative development. I am considering positions in software development, education, or a combination of the two.
 
 ## Background
 
 ### Security Service Federal Credit Union (Remote, San Antonio, TX)
 **Hybrid Mobile Developer** March 2023 - Present
 - Development of mobile banking app for use by members of the credit union
-- Ionic cross-platform development for iOS and Android
-  - Utilized Capacitor for native shell and deployment
-  - Codebase utilized Typescript and Angular for the frontend
-- Integration with existing banking systems and APIs
+  - Ionic cross-platform development for iOS and Android
+  - Utilized Capacitor to create native builds and custom plugins
+  - Developed and Angular components and services
+  - Integration with existing banking systems and APIs
 - Developed a modern Dashboard for monitoring reports from the mobile app and other internal applications
 - Modified and integrated .NET APIs for use with the mobile app and Dashboard (C#)
 
@@ -96,6 +96,7 @@ I have been programming in JavaScript for over 7 years and am proficient with an
 ### Midwestern State University (Wichita Falls, TX)
 **Adjunct Professor (Computer Science)** January 2021 - July 2021
 - Designed course material for courses and instructed classes of students ranging from freshmen to seniors.
+- Taught Data Structures & Algorithms, Game Development
 
 <div class="page-break"></div>
 
