@@ -14,11 +14,11 @@ const projects = [
       "A set of tools for running WFRP4e games in Foundry, including session, experience, and fear-management utilities.",
   },
   {
-    name: "Data Structures course material",
-    url: "https://github.com/jeremyglebe/Instruction-1063-Data-Structures",
-    stack: "C++, teaching",
+    name: "Crayon Blaster",
+    url: "https://github.com/jeremyglebe/CrayonBlaster",
+    stack: "Godot, GDScript",
     description:
-      "Examples and course material from teaching undergraduate data structures at Midwestern State University.",
+      "A crayon-styled arcade space shooter with player combat, meteors, scoring, title and game-over flows, and controller support.",
   },
 ];
 
