@@ -79,6 +79,7 @@ export default function App() {
               <a href="/resume.pdf">Résumé</a>
               <a href="https://www.linkedin.com/in/jeremy-glebe/">LinkedIn</a>
               <a href="https://github.com/jeremyglebe">GitHub</a>
+              <a href="https://jeremy.place">Jeremy&apos;s Place</a>
             </div>
           </div>
 
